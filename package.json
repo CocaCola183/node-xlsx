@@ -1,20 +1,17 @@
 {
-  "name": "node-xlsx",
-  "author": "Olivier Louvignes <olivier@mg-crea.com>",
-  "version": "0.12.1",
+  "name": "node-xlsx-kivi",
+  "author": "Kivi xv <s_f_dragon@163.com>",
+  "version": "0.0.1",
   "description": "NodeJS Excel files parser & builder",
   "main": "lib/index.js",
   "scripts": {
-    "start": "npm run test:watch",
-    "test": "NODE_ENV=test jest --runInBand",
-    "test:watch": "npm run test -- --watch",
-    "test:coverage": "npm run test -- --coverage",
-    "lint": "NODE_ENV=test eslint src/",
+    "start": "npm run test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "rimraf lib/*; NODE_ENV=production babel src/ -d lib/ -s",
     "compile:watch": "npm run compile -- -w",
     "prepublish": "npm run compile"
   },
-  "repository": "github:mgcrea/node-xlsx",
+  "repository": "github:CocaCola183/node-xlsx",
   "license": "Apache-2.0",
   "dependencies": {
     "buffer-from": "^1.1.0",
